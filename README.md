@@ -4,6 +4,7 @@ nmea
 Library to parse [NMEA](http://en.wikipedia.org/wiki/NMEA_0183) sentences. Working in progress (WIP).
 
 [![Build Status](https://travis-ci.org/pgodel/nmea.svg?branch=master)](http://travis-ci.org/pgodel/nmea)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/pgodel/nmea/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/pgodel/nmea/?branch=master)
 
 ## Installation
 
