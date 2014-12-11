@@ -1,7 +1,7 @@
 nmea
 ====
 
-Library to parse NMEA sentences. Working in progress (WIP).
+Library to parse [NMEA](http://en.wikipedia.org/wiki/NMEA_0183) sentences. Working in progress (WIP).
 
 
 ## Installation
