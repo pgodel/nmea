@@ -64,16 +64,12 @@ class Sentence
 
         if ('GP' === substr($parts[0], 1, 2)) {
             $key = substr($parts[0], 3);
-            if (!isset(DataType::$types[$key])) {
-                throw new \InvalidArgumentException(sprintf("The data type '%s' in sentence '%s' is invalid.", $parts[0], $rawSentence));
-            }
-
         } else {
             // proprietary codes
             $key = substr($parts[0], 1);
-            if (!isset(DataType::$types[$key])) {
-                throw new \InvalidArgumentException(sprintf("The data type '%s' in sentence '%s' is invalid or is not supported.", $parts[0], $rawSentence));
-            }
+        }
+        if (!isset(DataType::$types[$key])) {
+            throw new \InvalidArgumentException(sprintf("The data type '%s' in sentence '%s' is invalid or not supported.", $parts[0], $rawSentence));
         }
 
         $sentence = new self($key);
